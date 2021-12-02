@@ -419,6 +419,30 @@ img {
   color: #ffad9b;
 }
 
+@media only screen and (max-width: 690px) {
+  .button {
+    margin: 0;
+    padding: 17px 24px;
+    width: 100%;
+    max-width: 152px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #ffad9b;
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  .button:hover {
+    background-color: #ffad9b;
+    color: #fff;
+  }
+}
+
 .header {
   position: fixed;
   z-index: 100;
