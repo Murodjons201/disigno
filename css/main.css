@@ -649,7 +649,7 @@ img {
     width: 100%;
     max-width: 690px;
     padding: 9% 2% 70%;
-    background-position: 20% center, center 450px;
+    background-position: 100px center, center 450px;
     background-repeat: no-repeat;
     background-size: contain, 45%;
   }
@@ -688,7 +688,7 @@ img {
     width: 100%;
     max-width: 690px;
     padding: 9% 2% 70%;
-    background-position: 20% center, center 400px;
+    background-position: 80px center, center 400px;
     background-repeat: no-repeat;
     background-size: contain, 45%;
   }
