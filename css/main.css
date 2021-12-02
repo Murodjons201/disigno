@@ -765,6 +765,8 @@ img {
   background-image: url("../images/wepdesign.png");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: background-image 0.5s;
+  transition: background-image 0.5s;
 }
 
 .wep-design__heading {
@@ -775,6 +777,8 @@ img {
   font-size: 39px;
   line-height: 48px;
   letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -785,8 +789,15 @@ img {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 5px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.wep-design:hover {
+  background-image: url("../images/wepdesign1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .design-bottom {
@@ -825,6 +836,14 @@ img {
   background-image: url("../images/appdesign.png");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: background-image 0.5s;
+  transition: background-image 0.5s;
+}
+
+.design-bottom__app:hover {
+  background-image: url("../images/appdesign1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .design-bottom__graphic {
@@ -846,5 +865,126 @@ img {
   background-image: url("../images/graphicdesign.png");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: background-image 0.5s;
+  transition: background-image 0.5s;
+}
+
+.design-bottom__graphic:hover {
+  background-image: url("../images/graphicdesign1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 690px) {
+  .design-section {
+    margin-bottom: 120px;
+  }
+  .design--container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .wep-design {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 690px;
+    margin-right: 0;
+    margin-bottom: 24px;
+    padding: 8.3% 2%;
+    border-radius: 15px;
+    background-image: url("../images/wepdesign.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .wep-design__heading {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 48px;
+    letter-spacing: 2px;
+  }
+  .wep-design__desc {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+  }
+  .design-bottom {
+    position: relative;
+    width: 100%;
+    max-width: 690px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .design-bottom__app {
+    width: 100%;
+    max-width: 690px;
+    margin-bottom: 5%;
+    padding: 8.3% 2%;
+  }
+  .design-bottom__graphic {
+    width: 100%;
+    max-width: 690px;
+    padding: 8.3% 2%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .wep-design {
+    width: 100%;
+    max-width: 330px;
+    padding: 28% 2%;
+  }
+  .wep-design__heading {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1px;
+  }
+  .wep-design__desc {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+  .design-bottom {
+    width: 100%;
+    max-width: 330px;
+  }
+  .design-bottom__app {
+    width: 100%;
+    max-width: 330px;
+    margin-bottom: 5%;
+    padding: 28% 2%;
+  }
+  .design-bottom__graphic {
+    width: 100%;
+    max-width: 330px;
+    padding: 28% 2%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
