@@ -1,0 +1,139 @@
+.reference {
+    margin-bottom: 160px;
+
+    &__list {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 1110px;
+        display: flex;
+        align-items: stretch;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item + &__item {
+        margin-left: 30px;
+    }
+
+    &__img {
+        width: 202px;
+        height: 202px;
+        margin-bottom: 48px;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 32px;
+        padding: 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #333136;
+    }
+
+    &__desc {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #333136;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    .reference {
+        margin-bottom:70px;
+
+        &__list {
+            width: 100%;
+            max-width: 690px;
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
+            max-width: 690px;
+            flex-direction: row;
+        }
+
+        &__item + &__item {
+            margin-left: 0;
+            margin-top: 32px;
+        }
+
+        &__img {
+            margin: 0 48px 0 0;
+        }
+
+        &__bottom {
+            align-items: flex-start;
+        }
+
+        &__title {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        &__desc {
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .reference {
+        margin-bottom: 120px;
+
+        &__list {
+            width: 100%;
+            max-width: 540px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__item {
+            max-width: 330px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item + &__item {
+            margin-bottom: 80px;
+        }
+
+        &__img {
+            margin: 0 0 48px 0;
+        }
+
+        &__bottom {
+            align-items: center;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__desc {
+            text-align: center;
+        }
+    }
+}
